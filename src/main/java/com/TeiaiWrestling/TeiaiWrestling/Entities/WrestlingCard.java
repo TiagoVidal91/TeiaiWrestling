@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -24,4 +26,6 @@ public class WrestlingCard {
     private Wrestler wrestler;
     private int totalMatches;
     private String totalAverage;
+    @OneToMany
+    List<Match> matchList = new ArrayList<>();
 }

@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -20,4 +22,5 @@ public class Wrestler {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "wrestling_card_id", referencedColumnName = "id")
     private WrestlingCard wrestlingCard;
+
 }

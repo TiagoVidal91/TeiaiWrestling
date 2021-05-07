@@ -2,6 +2,7 @@ package com.TeiaiWrestling.TeiaiWrestling.Controllers;
 
 import com.TeiaiWrestling.TeiaiWrestling.Services.AverageMatchService;
 import com.TeiaiWrestling.TeiaiWrestling.Services.ScoreChangerService;
+import com.TeiaiWrestling.TeiaiWrestling.Services.StreakCounterService;
 import com.TeiaiWrestling.TeiaiWrestling.Services.WrestlerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +20,8 @@ public class MatchPageController {
     @Autowired
     ScoreChangerService scoreChangerService;
 
-
+    @Autowired
+    StreakCounterService streakCounterService;
 
     @GetMapping(value = "/resultsmatches")
     public ModelAndView showMatchPage(){
@@ -32,6 +34,7 @@ public class MatchPageController {
     public ModelAndView updateScore(@RequestParam String wrestlerName, @RequestParam String typeMatch){
         ModelAndView map = new ModelAndView("resultsmatches");
         scoreChangerService.changeScore(Integer.parseInt(typeMatch),wrestlerName);
+        streakCounterService.streakCount(Integer.parseInt(typeMatch),wrestlerName);
         map.addObject("message",0);
         return map;
     }
