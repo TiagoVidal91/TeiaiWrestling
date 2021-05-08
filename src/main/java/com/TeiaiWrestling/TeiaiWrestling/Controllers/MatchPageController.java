@@ -32,7 +32,7 @@ public class MatchPageController {
 
     @PostMapping(value = "/resultsmatches")
     public ModelAndView updateScore(@RequestParam String wrestlerName, @RequestParam String typeMatch){
-        ModelAndView map = new ModelAndView("resultsmatches");
+        ModelAndView map = new ModelAndView("redirect:/resultsmatches");
         scoreChangerService.changeScore(Integer.parseInt(typeMatch),wrestlerName);
         streakCounterService.streakCount(Integer.parseInt(typeMatch),wrestlerName);
         map.addObject("message",0);
