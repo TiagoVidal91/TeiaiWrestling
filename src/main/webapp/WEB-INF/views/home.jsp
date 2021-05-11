@@ -5,10 +5,14 @@
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/styles1.css" type="text/css">
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 </head>
 <body>
+<a href="/resultsmatches" class="btn btn-success">
+    Define Status
+</a>
 <form>
-<table class="table" id="cssTable">
+<table class="sortable" id="cssTable">
     <thead class="thead-dark">
     <tr>
         <th scope="col"> Picture </th>
@@ -41,9 +45,6 @@
 <button type="submit" class="float-right">
     Update
 </button>
-<a href="/resultsmatches" class="float-left">
-    New Wrestler
-</a>
 </form>
 </body>
 </html>

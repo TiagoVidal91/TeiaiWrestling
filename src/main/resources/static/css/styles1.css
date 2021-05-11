@@ -205,7 +205,7 @@ svg {
     vertical-align: middle;
 }
 
-table {
+sortable {
     border-collapse: collapse;
 }
 
@@ -1511,346 +1511,346 @@ pre code {
     }
 }
 
-.table {
+.sortable {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
 }
 
-.table th,
-.table td {
+.sortable th,
+.sortable td {
     padding: 0.75rem;
     vertical-align: middle;
     border-top: 1px solid #dee2e6;
 }
 
-.table thead th {
+.sortable thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
 }
 
-.table tbody + tbody {
+.sortable tbody + tbody {
     border-top: 2px solid #dee2e6;
 }
 
-.table-sm th,
-.table-sm td {
+.sortable-sm th,
+.sortable-sm td {
     padding: 0.3rem;
 }
 
-.table-bordered {
+.sortable-bordered {
     border: 1px solid #dee2e6;
 }
 
-.table-bordered th,
-.table-bordered td {
+.sortable-bordered th,
+.sortable-bordered td {
     border: 1px solid #dee2e6;
 }
 
-.table-bordered thead th,
-.table-bordered thead td {
+.sortable-bordered thead th,
+.sortable-bordered thead td {
     border-bottom-width: 2px;
 }
 
-.table-borderless th,
-.table-borderless td,
-.table-borderless thead th,
-.table-borderless tbody + tbody {
+.sortable-borderless th,
+.sortable-borderless td,
+.sortable-borderless thead th,
+.sortable-borderless tbody + tbody {
     border: 0;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
+.sortable-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.table-hover tbody tr:hover {
+.sortable-hover tbody tr:hover {
     color: #212529;
     background-color: rgba(0, 0, 0, 0.075);
 }
 
-.table-primary,
-.table-primary > th,
-.table-primary > td {
+.sortable-primary,
+.sortable-primary > th,
+.sortable-primary > td {
     background-color: #b8daff;
 }
 
-.table-primary th,
-.table-primary td,
-.table-primary thead th,
-.table-primary tbody + tbody {
+.sortable-primary th,
+.sortable-primary td,
+.sortable-primary thead th,
+.sortable-primary tbody + tbody {
     border-color: #7abaff;
 }
 
-.table-hover .table-primary:hover {
+.sortable-hover .sortable-primary:hover {
     background-color: #9fcdff;
 }
 
-.table-hover .table-primary:hover > td,
-.table-hover .table-primary:hover > th {
+.sortable-hover .sortable-primary:hover > td,
+.sortable-hover .sortable-primary:hover > th {
     background-color: #9fcdff;
 }
 
-.table-secondary,
-.table-secondary > th,
-.table-secondary > td {
+.sortable-secondary,
+.sortable-secondary > th,
+.sortable-secondary > td {
     background-color: #d6d8db;
 }
 
-.table-secondary th,
-.table-secondary td,
-.table-secondary thead th,
-.table-secondary tbody + tbody {
+.sortable-secondary th,
+.sortable-secondary td,
+.sortable-secondary thead th,
+.sortable-secondary tbody + tbody {
     border-color: #b3b7bb;
 }
 
-.table-hover .table-secondary:hover {
+.sortable-hover .sortable-secondary:hover {
     background-color: #c8cbcf;
 }
 
-.table-hover .table-secondary:hover > td,
-.table-hover .table-secondary:hover > th {
+.sortable-hover .sortable-secondary:hover > td,
+.sortable-hover .sortable-secondary:hover > th {
     background-color: #c8cbcf;
 }
 
-.table-success,
-.table-success > th,
-.table-success > td {
+.sortable-success,
+.sortable-success > th,
+.sortable-success > td {
     background-color: #c3e6cb;
 }
 
-.table-success th,
-.table-success td,
-.table-success thead th,
-.table-success tbody + tbody {
+.sortable-success th,
+.sortable-success td,
+.sortable-success thead th,
+.sortable-success tbody + tbody {
     border-color: #8fd19e;
 }
 
-.table-hover .table-success:hover {
+.sortable-hover .sortable-success:hover {
     background-color: #b1dfbb;
 }
 
-.table-hover .table-success:hover > td,
-.table-hover .table-success:hover > th {
+.sortable-hover .sortable-success:hover > td,
+.sortable-hover .sortable-success:hover > th {
     background-color: #b1dfbb;
 }
 
-.table-info,
-.table-info > th,
-.table-info > td {
+.sortable-info,
+.sortable-info > th,
+.sortable-info > td {
     background-color: #bee5eb;
 }
 
-.table-info th,
-.table-info td,
-.table-info thead th,
-.table-info tbody + tbody {
+.sortable-info th,
+.sortable-info td,
+.sortable-info thead th,
+.sortable-info tbody + tbody {
     border-color: #86cfda;
 }
 
-.table-hover .table-info:hover {
+.sortable-hover .sortable-info:hover {
     background-color: #abdde5;
 }
 
-.table-hover .table-info:hover > td,
-.table-hover .table-info:hover > th {
+.sortable-hover .sortable-info:hover > td,
+.sortable-hover .sortable-info:hover > th {
     background-color: #abdde5;
 }
 
-.table-warning,
-.table-warning > th,
-.table-warning > td {
+.sortable-warning,
+.sortable-warning > th,
+.sortable-warning > td {
     background-color: #ffeeba;
 }
 
-.table-warning th,
-.table-warning td,
-.table-warning thead th,
-.table-warning tbody + tbody {
+.sortable-warning th,
+.sortable-warning td,
+.sortable-warning thead th,
+.sortable-warning tbody + tbody {
     border-color: #ffdf7e;
 }
 
-.table-hover .table-warning:hover {
+.sortable-hover .sortable-warning:hover {
     background-color: #ffe8a1;
 }
 
-.table-hover .table-warning:hover > td,
-.table-hover .table-warning:hover > th {
+.sortable-hover .sortable-warning:hover > td,
+.sortable-hover .sortable-warning:hover > th {
     background-color: #ffe8a1;
 }
 
-.table-danger,
-.table-danger > th,
-.table-danger > td {
+.sortable-danger,
+.sortable-danger > th,
+.sortable-danger > td {
     background-color: #f5c6cb;
 }
 
-.table-danger th,
-.table-danger td,
-.table-danger thead th,
-.table-danger tbody + tbody {
+.sortable-danger th,
+.sortable-danger td,
+.sortable-danger thead th,
+.sortable-danger tbody + tbody {
     border-color: #ed969e;
 }
 
-.table-hover .table-danger:hover {
+.sortable-hover .sortable-danger:hover {
     background-color: #f1b0b7;
 }
 
-.table-hover .table-danger:hover > td,
-.table-hover .table-danger:hover > th {
+.sortable-hover .sortable-danger:hover > td,
+.sortable-hover .sortable-danger:hover > th {
     background-color: #f1b0b7;
 }
 
-.table-light,
-.table-light > th,
-.table-light > td {
+.sortable-light,
+.sortable-light > th,
+.sortable-light > td {
     background-color: #fdfdfe;
 }
 
-.table-light th,
-.table-light td,
-.table-light thead th,
-.table-light tbody + tbody {
+.sortable-light th,
+.sortable-light td,
+.sortable-light thead th,
+.sortable-light tbody + tbody {
     border-color: #fbfcfc;
 }
 
-.table-hover .table-light:hover {
+.sortable-hover .sortable-light:hover {
     background-color: #ececf6;
 }
 
-.table-hover .table-light:hover > td,
-.table-hover .table-light:hover > th {
+.sortable-hover .sortable-light:hover > td,
+.sortable-hover .sortable-light:hover > th {
     background-color: #ececf6;
 }
 
-.table-dark,
-.table-dark > th,
-.table-dark > td {
+.sortable-dark,
+.sortable-dark > th,
+.sortable-dark > td {
     background-color: #c6c8ca;
 }
 
-.table-dark th,
-.table-dark td,
-.table-dark thead th,
-.table-dark tbody + tbody {
+.sortable-dark th,
+.sortable-dark td,
+.sortable-dark thead th,
+.sortable-dark tbody + tbody {
     border-color: #95999c;
 }
 
-.table-hover .table-dark:hover {
+.sortable-hover .sortable-dark:hover {
     background-color: #b9bbbe;
 }
 
-.table-hover .table-dark:hover > td,
-.table-hover .table-dark:hover > th {
+.sortable-hover .sortable-dark:hover > td,
+.sortable-hover .sortable-dark:hover > th {
     background-color: #b9bbbe;
 }
 
-.table-active,
-.table-active > th,
-.table-active > td {
+.sortable-active,
+.sortable-active > th,
+.sortable-active > td {
     background-color: rgba(0, 0, 0, 0.075);
 }
 
-.table-hover .table-active:hover {
+.sortable-hover .sortable-active:hover {
     background-color: rgba(0, 0, 0, 0.075);
 }
 
-.table-hover .table-active:hover > td,
-.table-hover .table-active:hover > th {
+.sortable-hover .sortable-active:hover > td,
+.sortable-hover .sortable-active:hover > th {
     background-color: rgba(0, 0, 0, 0.075);
 }
 
-.table .thead-dark th {
+.sortable .thead-dark th {
     color: #fff;
     background-color: #343a40;
     border-color: #454d55;
 }
 
-.table .thead-light th {
+.sortable .thead-light th {
     color: #495057;
     background-color: #e9ecef;
     border-color: #dee2e6;
 }
 
-.table-dark {
+.sortable-dark {
     color: #fff;
     background-color: #343a40;
 }
 
-.table-dark th,
-.table-dark td,
-.table-dark thead th {
+.sortable-dark th,
+.sortable-dark td,
+.sortable-dark thead th {
     border-color: #454d55;
 }
 
-.table-dark.table-bordered {
+.sortable-dark.sortable-bordered {
     border: 0;
 }
 
-.table-dark.table-striped tbody tr:nth-of-type(odd) {
+.sortable-dark.sortable-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.table-dark.table-hover tbody tr:hover {
+.sortable-dark.sortable-hover tbody tr:hover {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.075);
 }
 
 @media (max-width: 575.98px) {
-    .table-responsive-sm {
+    .sortable-responsive-sm {
         display: block;
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
-    .table-responsive-sm > .table-bordered {
+    .sortable-responsive-sm > .sortable-bordered {
         border: 0;
     }
 }
 
 @media (max-width: 767.98px) {
-    .table-responsive-md {
+    .sortable-responsive-md {
         display: block;
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
-    .table-responsive-md > .table-bordered {
+    .sortable-responsive-md > .sortable-bordered {
         border: 0;
     }
 }
 
 @media (max-width: 991.98px) {
-    .table-responsive-lg {
+    .sortable-responsive-lg {
         display: block;
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
-    .table-responsive-lg > .table-bordered {
+    .sortable-responsive-lg > .sortable-bordered {
         border: 0;
     }
 }
 
 @media (max-width: 1199.98px) {
-    .table-responsive-xl {
+    .sortable-responsive-xl {
         display: block;
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
-    .table-responsive-xl > .table-bordered {
+    .sortable-responsive-xl > .sortable-bordered {
         border: 0;
     }
 }
 
-.table-responsive {
+.sortable-responsive {
     display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-.table-responsive > .table-bordered {
+.sortable-responsive > .sortable-bordered {
     border: 0;
 }
 
@@ -10010,27 +10010,27 @@ a.text-dark:hover, a.text-dark:focus {
     .badge {
         border: 1px solid #000;
     }
-    .table {
+    .sortable {
         border-collapse: collapse !important;
     }
-    .table td,
-    .table th {
+    .sortable td,
+    .sortable th {
         background-color: #fff !important;
     }
-    .table-bordered th,
-    .table-bordered td {
+    .sortable-bordered th,
+    .sortable-bordered td {
         border: 1px solid #dee2e6 !important;
     }
-    .table-dark {
+    .sortable-dark {
         color: inherit;
     }
-    .table-dark th,
-    .table-dark td,
-    .table-dark thead th,
-    .table-dark tbody + tbody {
+    .sortable-dark th,
+    .sortable-dark td,
+    .sortable-dark thead th,
+    .sortable-dark tbody + tbody {
         border-color: #dee2e6;
     }
-    .table .thead-dark th {
+    .sortable .thead-dark th {
         color: inherit;
         border-color: #dee2e6;
     }
