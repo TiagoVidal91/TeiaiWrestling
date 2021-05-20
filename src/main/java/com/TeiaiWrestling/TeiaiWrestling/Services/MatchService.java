@@ -8,4 +8,6 @@ public interface MatchService {
 
     List<Match> findAllMatches();
 
+    void updateMatch(Match match);
+
 }

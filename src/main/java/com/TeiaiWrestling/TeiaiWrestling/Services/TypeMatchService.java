@@ -8,4 +8,6 @@ public interface TypeMatchService {
 
     List<MatchType> findAll();
 
+    MatchType findMatchByName(String matchName);
+
 }

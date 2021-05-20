@@ -9,4 +9,6 @@ public interface TypeMatchesRepository extends JpaRepository<MatchType, Long> {
 
     @Override
     List<MatchType> findAll();
+
+    MatchType findByName(String name);
 }

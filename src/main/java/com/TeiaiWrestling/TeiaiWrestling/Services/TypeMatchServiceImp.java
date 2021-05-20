@@ -17,4 +17,9 @@ public class TypeMatchServiceImp implements TypeMatchService{
     public List<MatchType> findAll() {
         return typeMatchesRepository.findAll();
     }
+
+    @Override
+    public MatchType findMatchByName(String matchName) {
+        return typeMatchesRepository.findByName(matchName);
+    }
 }

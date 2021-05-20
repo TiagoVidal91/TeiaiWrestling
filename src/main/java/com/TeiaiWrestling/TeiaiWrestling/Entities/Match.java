@@ -19,14 +19,11 @@ public class Match {
     @Id
     @GeneratedValue
     private Long id;
-    @ElementCollection
-    private List<String> victory = new ArrayList<>();
-    @ElementCollection
-    private List<String> loss = new ArrayList<>();
-    @ElementCollection
-    private List<String> noWin = new ArrayList<>();
-    @ElementCollection
-    private List<String> draw = new ArrayList<>();
+    private String winner;
+    private String loser;
+    private String noWin;
+    private String draw1;
+    private String draw2;
     @ManyToOne
     private MatchType matchType;
     @ManyToOne

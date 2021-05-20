@@ -11,6 +11,9 @@
 <a href="/resultsmatches" class="btn btn-success">
     Define Status
 </a>
+<a href="/choosematch" class="btn btn-success">
+    Add a Match
+</a>
 <form>
 <table class="sortable" id="cssTable">
     <thead class="thead-dark">
