@@ -31,11 +31,12 @@
         <input type="radio" id="draw" name="typeMatch" value="3" class="custom-control-input">
         <label class="custom-control-label" for="draw">Draw</label>
     </div>
-<select id="wrestlers" class="custom-select" name="wrestlerName" MULTIPLE>
+<select id="wrestlers" class="custom-select" name="wrestlerName" style="height: 450px; overflow-y: scroll" MULTIPLE>
     <c:forEach var="wrestler" items="${wrestlerList}">
     <option value="${wrestler.getWrestlerName()}">${wrestler.getWrestlerName()}</option>
     </c:forEach>
 </select>
+    <br>
     <c:choose>
         <c:when test="${message==0}">
             <span style="color: forestgreen ">O Sheet foi atualizado!</span>
@@ -44,7 +45,7 @@
             <span style="color: darkred ">Houve um problema com os dados!</span>
         </c:when>
     </c:choose>
-    <button type="submit" class="float-right">
+    <button type="submit" class="float-left">
         Update
     </button>
 </form>
