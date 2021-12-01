@@ -17,7 +17,7 @@ public class AverageMatchService {
 
         for(WrestlingCard wrestlingCard: wrestlingCardRepository.findAll()){
 
-            DecimalFormat decimalFormat = new DecimalFormat("#.##");
+            DecimalFormat decimalFormat = new DecimalFormat("0.00");
             double totalAverage = 0;
 
             if(wrestlingCard.getNumberVictories()==0 || wrestlingCard.getTotalMatches()==0){
