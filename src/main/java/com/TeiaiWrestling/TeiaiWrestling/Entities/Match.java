@@ -26,8 +26,8 @@ public class Match {
     private String draw2;
     @ManyToOne
     private MatchType matchType;
-    @ManyToOne
-    private WrestlingCard wrestlingCard;
+    @ManyToMany
+    private List<WrestlingCard> wrestlingCardList = new ArrayList<>();
 
     private int rating;
 

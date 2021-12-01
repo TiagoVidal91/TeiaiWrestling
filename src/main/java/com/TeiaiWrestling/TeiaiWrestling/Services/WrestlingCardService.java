@@ -10,4 +10,6 @@ public interface WrestlingCardService {
     List<WrestlingCard> findAll();
 
     void updateWrestler(String wrestlerName);
+
+    List<WrestlingCard> findAllByWrestlerName (String wrestlerName1, String wrestlerName2);
 }

@@ -14,7 +14,7 @@
         HomePage
     </a>
 </nav>
-<form method="post">
+<form method="post" id="submit_status">
 <div class="custom-control custom-radio">
     <input type="radio" id="win" name="typeMatch" value="0" class="custom-control-input" checked>
     <label class="custom-control-label" for="win">Won</label>
@@ -31,14 +31,19 @@
         <input type="radio" id="draw" name="typeMatch" value="3" class="custom-control-input">
         <label class="custom-control-label" for="draw">Draw</label>
     </div>
-<select class="custom-select" name="wrestlerName">
+<select id="wrestlers" class="custom-select" name="wrestlerName" MULTIPLE>
     <c:forEach var="wrestler" items="${wrestlerList}">
     <option value="${wrestler.getWrestlerName()}">${wrestler.getWrestlerName()}</option>
     </c:forEach>
 </select>
-    <c:if test="${message==0}">
-    <span style="color: forestgreen ">O Sheet foi atualizado!</span>
-    </c:if>
+    <c:choose>
+        <c:when test="${message==0}">
+            <span style="color: forestgreen ">O Sheet foi atualizado!</span>
+        </c:when>
+        <c:when test="${message==1}">
+            <span style="color: darkred ">Houve um problema com os dados!</span>
+        </c:when>
+    </c:choose>
     <button type="submit" class="float-right">
         Update
     </button>

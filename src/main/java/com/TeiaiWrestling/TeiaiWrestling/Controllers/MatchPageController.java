@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -31,11 +32,23 @@ public class MatchPageController {
     }
 
     @PostMapping(value = "/resultsmatches")
-    public ModelAndView updateScore(@RequestParam String wrestlerName, @RequestParam String typeMatch){
+    public ModelAndView updateScore(@RequestBody String wrestler){
         ModelAndView map = new ModelAndView("resultsmatches");
-        scoreChangerService.changeScore(Integer.parseInt(typeMatch),wrestlerName);
-        streakCounterService.streakCount(Integer.parseInt(typeMatch),wrestlerName);
-        map.addObject("message",0);
+        String matchTypeStr = wrestler.substring("typeMatch=".length()).split("&")[0];
+        String wrestlersNames = wrestler.substring(("typeMatch="+matchTypeStr).length()).
+                replaceAll("wrestlerName=","")
+                .replaceAll("\\+"," ");
+        System.out.println(matchTypeStr);
+        System.out.println(wrestlersNames);
+        if(!wrestlersNames.isEmpty()) {
+            for (int i = 1; i < wrestlersNames.split("&").length; i++) {
+                scoreChangerService.changeScore(Integer.parseInt(matchTypeStr), wrestlersNames.split("&")[i]);
+                streakCounterService.streakCount(Integer.parseInt(matchTypeStr), wrestlersNames.split("&")[i]);
+                map.addObject("message",0);
+            }
+        }else{
+            map.addObject("message",1);
+        }
         map.addObject("wrestlerList",wrestlerService.findAllAndOrder());
         return map;
     }

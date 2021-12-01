@@ -16,7 +16,7 @@
         HomePage
     </a>
 </nav>
-<form:form method="post">
+<form method="post">
 <div class="single" id="single">
     <div>
         <label><b>Winner of Match:</b></label>
@@ -42,12 +42,13 @@
         <span style="color: forestgreen ">Verifique a informação!</span>
     </c:if>
     <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="draw">
+        <input class="form-check-input" type="checkbox" id="flexCheckChecked" name="draw">
         <label class="form-check-label" for="flexCheckChecked"><b>Draw</b>
         </label>
     </div>
     <button type="submit" class="float-right">
         Update
     </button>
-</form:form>
+</form>
 </body>
+</html>
