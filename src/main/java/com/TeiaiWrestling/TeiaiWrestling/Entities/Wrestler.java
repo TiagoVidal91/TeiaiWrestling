@@ -22,5 +22,6 @@ public class Wrestler {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "wrestling_card_id", referencedColumnName = "id")
     private WrestlingCard wrestlingCard;
+    private String sex;
 
 }

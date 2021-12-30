@@ -8,18 +8,12 @@
     <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 </head>
 <body>
-<div>
-    <a href="/resultsmatches" class="btn btn-success">
-        Define Status
-    </a>
-    <a href="/choosematch" class="btn btn-success">
-        Add a Match
-    </a>
-    <div class="btn-group float-right">
-        <a href="/" class="btn btn-success">Full Roster</a>
-        <a href="/menroster" class="btn btn-success">Men's Roster</a>
-        <a href="/womenroster" class="btn btn-success">Women's Roster</a>
-    </div>
+<a href="/resultsmatches" class="btn btn-success">
+    Define Status
+</a>
+<a href="/choosematch" class="btn btn-success">
+    Add a Match
+</a>
 <form>
 <table class="sortable" id="cssTable">
     <thead class="thead-dark">

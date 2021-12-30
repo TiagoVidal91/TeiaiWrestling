@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface WrestlerRepository extends JpaRepository<Wrestler, Long> {
 
-    @Override
     List<Wrestler> findAll();
+    List<Wrestler> findAllBySex(String sex);
 }

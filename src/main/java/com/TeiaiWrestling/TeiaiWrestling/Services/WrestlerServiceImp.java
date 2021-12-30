@@ -23,4 +23,15 @@ public class WrestlerServiceImp implements WrestlerService{
         wrestlerTreeSet.addAll(wrestlerRepository.findAll());
         return wrestlerTreeSet;
     }
+
+    @Override
+    public TreeSet<Wrestler> findAllAByGender(String gender) {
+        TreeSet<Wrestler> wrestlerTreeSet = new TreeSet<>(comparatorService);
+        if(gender.equals("ALL")){
+            wrestlerTreeSet.addAll(wrestlerRepository.findAll());
+        }else{
+            wrestlerTreeSet.addAll(wrestlerRepository.findAllBySex(gender));
+        }
+        return wrestlerTreeSet;
+    }
 }

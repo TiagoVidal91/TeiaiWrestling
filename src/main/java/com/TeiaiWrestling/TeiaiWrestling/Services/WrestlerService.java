@@ -8,4 +8,6 @@ import java.util.TreeSet;
 public interface WrestlerService {
 
     TreeSet<Wrestler> findAllAndOrder();
+
+    TreeSet<Wrestler> findAllAByGender(String gender);
 }

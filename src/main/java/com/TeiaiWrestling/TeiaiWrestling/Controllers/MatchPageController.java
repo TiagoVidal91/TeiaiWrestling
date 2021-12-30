@@ -33,6 +33,7 @@ public class MatchPageController {
 
     @PostMapping(value = "/resultsmatches")
     public ModelAndView updateScore(@RequestBody String wrestler){
+        System.out.println(wrestler);
         ModelAndView map = new ModelAndView("resultsmatches");
         String matchTypeStr = wrestler.substring("typeMatch=".length()).split("&")[0];
         String wrestlersNames = wrestler.substring(("typeMatch="+matchTypeStr).length()).
